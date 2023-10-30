@@ -58,10 +58,11 @@ const HomePage: React.FC<HomePageProps> = ({ initialProducts, categories }) => {
         <div className="flex flex-col w-full lg:w-[calc(70%-7.5px)]">
           <div className="relative w-full h-[55vh] lg:h-[calc(60vh+15px)] transition-transform duration-200 hover:scale-[1.01] ease-in-out  overflow-hidden">
             <span className="box-border block opacity-100 p-0 m-0 border-none absolute inset-0 ">
-              <img
+              <Image
                 src="https://i.ytimg.com/vi/jxKvLoj2vhE/maxresdefault.jpg"
                 className="absolute inset-0 box-border p-0 border-none m-auto block w-0 h-0 min-w-full max-w-full min-h-full max-h-full object-cover rounded-2xl "
                 alt=""
+                fill
               />
             </span>
 
@@ -89,10 +90,11 @@ const HomePage: React.FC<HomePageProps> = ({ initialProducts, categories }) => {
           <div className="flex gap-[10px] w-full lg:flex-col lg:gap-[15px]">
             <div className="relative w-[calc(50%-5px)] h-[30vh] lg:w-full transition-transform duration-200 hover:scale-[1.01] ease-in-out  overflow-hidden">
               <span className="box-border block opacity-100 p-0 m-0 border-none absolute inset-0">
-                <img
+                <Image
                   src="https://giaybongro.vn/upload/images/1003510800/86/6693_1665834051.jpg"
                   className="absolute inset-0 box-border p-0 border-none m-auto block w-0 h-0 min-w-full max-w-full min-h-full max-h-full object-cover rounded-2xl"
                   alt=""
+                  fill
                 />
               </span>
 
@@ -105,10 +107,11 @@ const HomePage: React.FC<HomePageProps> = ({ initialProducts, categories }) => {
             </div>
             <div className="relative w-[calc(50%-5px)] h-[30vh] lg:w-full transition-transform duration-200 hover:scale-[1.01] ease-in-out  overflow-hidden">
               <span className="box-border block opacity-100 p-0 m-0 border-none absolute inset-0">
-                <img
+                <Image
                   src="https://th.bing.com/th/id/OIP.hEK8RcxvfHsfsm4gH2m3IQHaHa?pid=ImgDet&rs=1"
                   className="absolute inset-0 box-border p-0 border-none m-auto block w-0 h-0 min-w-full max-w-full min-h-full max-h-full object-cover rounded-2xl"
                   alt=""
+                  fill
                 />
               </span>
 
