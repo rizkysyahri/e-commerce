@@ -1,6 +1,5 @@
 import { db } from "@/lib/db";
-import { z } from "zod";
-
+import z from "zod";
 
 export async function GET(req: Request) {
   const url = new URL(req.url);
@@ -29,8 +28,8 @@ export async function GET(req: Request) {
     }
 
     const findProducts = await db.product.findMany({
-      where:{
-        deleted: false
+      where: {
+        deleted: false,
       },
       take: parseInt(limit),
       skip: (parseInt(page) - 1) * parseInt(limit),
