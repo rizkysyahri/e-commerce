@@ -52,17 +52,16 @@ export function SheetForAccount({ user }: { user: User | null }) {
                 <span className="w-full border-t" />
               </div>
             </div>
-            <div>
-              <SheetDescription>
-                Your account is not verified yet. A verification email has been
-                sent to caiuhuy@gmail.com.
-                <div className="space-y-3 flex items-center justify-center">
-                  <Button variant="link" className="text-sky-500 font-light">
-                    Resend Verfication Error
-                  </Button>
-                </div>
-              </SheetDescription>
-            </div>
+
+            <SheetDescription>
+              Your account is not verified yet. A verification email has been
+              sent to caiuhuy@gmail.com.
+              <div className="space-y-3 flex items-center justify-center">
+                <Button variant="link" className="text-sky-500 font-light">
+                  Resend Verfication Error
+                </Button>
+              </div>
+            </SheetDescription>
 
             <div className="relative py-2">
               <div className="absolute inset-0 flex items-center">

@@ -4,6 +4,7 @@ import "./globals.css";
 import SearchBar from "@/components/SearchBar";
 import { ThemeProvider } from "@/components/Theme-providers";
 import Providers from "@/components/Providers";
+import createClient from "@/lib/supabase-server";
 
 export const dynamic = "force-dynamic";
 
@@ -12,8 +13,6 @@ const poppins = Poppins({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
-
-
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -27,6 +26,12 @@ export default async function RootLayout({
   children: React.ReactNode;
   authModal: React.ReactNode;
 }) {
+  const supabase = createClient();
+
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
   return (
     <html lang="en">
       <body className={` ${poppins.className}`}>
